@@ -16,6 +16,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -23,33 +30,36 @@
       <h1>EPICODE - IL BLOG DEI DEVELOPERS</h1>
       <nav>
         <ul>
-          <li><a href="#">=>HOME<=</a></li>
-          <li><a href="#">=>ARTICOLI<=</a></li>
-          <li><a href="#">=>LAVORA CON NOI<=</a></li>
+          <li><a href="#"<i class="fas fa-arrow-right"></i>HOME<i class="fas fa-arrow-left"></i></a></li>
+          <li><a href="#"<i class="fas fa-arrow-right"></i>ARTICOLI<i class="fas fa-arrow-left"></i></a></li>
+          <li><a href="#"<i class="fas fa-arrow-right"></i>LAVORA CON NOI<i class="fas fa-arrow-left"></i></a></li>
         </ul>
       </nav>
     </header>
     <main>
       <article>
         <h2>Come creare un template per i post</h2>
-        <h4>di Mario Rossi - Pubblicato il 25-10-2020</h4>
+        <h4>
+          <i class="fas fa-pen-square"></i> di Mario Rossi -
+          <i class="fas fa-clock"></i> Pubblicato il 25-10-2020
+        </h4>
         <p>
           La prima cosa da fare è suddividere in blocchi logici la pagina,
           identificando le <b>parti comuni</b> da applicare a tutte le pagine
         </p>
         <p>Le varie aree saranno quindi suddivise in:</p>
         <ul>
-          <li>Contenuti di intestazione del tag &lt; header &gt;</li>
+          <li>Contenuti di intestazione del tag <span>&lt; header &gt;</span></li>
           <li>
-            Contenuti centrali veriabili del tag &lt; main &gt; (corpo
+            Contenuti centrali veriabili del tag <span>&lt; main &gt;</span> (corpo
             principale)
           </li>
           <li>
-            Contenuti di fine pagina comuni, da inserire nel tag &lt; footer
-            &gt;
+            Contenuti di fine pagina comuni, da inserire nel tag <span>&lt; footer
+            &gt;</span>
           </li>
         </ul>
-        <h2>Formattazione del codice</h2>
+        <h2 class="special-h2">Formattazione del codice</h2>
         <p>
           Il testo dell'articolo dovrà essere formattato per identificare tutte
           le parti da <b>selezionare con i CSS</b>. Perciò i passi saranno:
@@ -84,7 +94,7 @@
               <td>20%</td>
               <td>17%</td>
             </tr>
-            <tr>
+            <tr class="tr-special">
               <td>2002</td>
               <td>35%</td>
               <td>22%</td>
@@ -94,15 +104,15 @@
               <td>45%</td>
               <td>42%</td>
             </tr>
-            <tr>
+            <tr class="tr-special">
               <td>2008</td>
               <td>80%</td>
               <td>51%</td>
             </tr>
             <tr>
-              <td>2012</td>
-              <td>100%</td>
-              <td>76%</td>
+              <td class="td-special">2012</td>
+              <td class="td-special">100%</td>
+              <td class="td-special">76%</td>
             </tr>
           </table>
         </div>
@@ -138,18 +148,18 @@
         <h2 id="special-h2">ARTICOLI CORRELATI</h2>
         <div>
           <h3><a href="#">Validare il codice HTML</a></h3>
-          <p>Categoria: develop</p>
-          <p>Data: 18-9-2020</p>
+          <p><i class="fas fa-tag"></i> Categoria: develop</p>
+          <p><i class="fas fa-calendar-alt"></i>Data: 18-9-2020</p>
         </div>
         <div>
           <h3><a href="#">Correggere la sintassi</a></h3>
-          <p>Categoria: develop</p>
-          <p>Data: 16-9-2020</p>
+          <p><i class="fas fa-tag"></i> Categoria: develop</p>
+          <p><i class="fas fa-calendar-alt"></i> Data: 16-9-2020</p>
         </div>
         <div>
           <h3><a href="#">Meno Kb nella pagina</a></h3>
-          <p>Categoria: ottimizzazione</p>
-          <p>Data: 30-9-2020</p>
+          <p><i class="fas fa-tag"></i> Categoria: ottimizzazione</p>
+          <p><i class="fas fa-calendar-alt"></i> Data: 30-9-2020</p>
         </div>
       </section>
     </main>

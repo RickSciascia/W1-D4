@@ -7,6 +7,7 @@ h5,
 h6 {
   font-weight: bold;
   margin: 0.5em 0; /* 1em sopra e sotto, 0 dx e sx */
+  line-height: 1.35em;
 }
 
 h1 {
@@ -23,6 +24,7 @@ h3 {
 
 p {
   margin: 0.25em 0;
+  line-height: 1.35em;
 }
 
 ol,
@@ -37,12 +39,6 @@ ul {
 
 ol {
   list-style-type: decimal;
-}
-
-table {
-  width: 100%;
-  text-align: center;
-  margin: 1em 0;
 }
 
 /* BODY + BACKGROUND */
@@ -114,6 +110,23 @@ main {
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
+
+main article h4 {
+  color: #a0a19f;
+  font-weight: 400;
+}
+
+li {
+  line-height: 1.35em;
+}
+
+span {
+  background-color: rgb(201, 201, 201);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+}
 b {
   color: #ac1d6f;
   font-weight: 700;
@@ -134,15 +147,40 @@ main h4 {
 .special-p a {
   color: #13a9d1;
 }
+.special-h2 {
+  text-align: left;
+  font-size: 1em;
+  font-weight: 400;
+}
 
 /* TABELLE */
-tr {
-  align-items: center;
+table {
+  width: 100%;
+  text-align: center;
+  margin: 1em 0;
 }
-
 caption {
   width: 100%;
+  font-weight: 400;
+  font-style: italic;
 }
+.tr-special {
+  background-color: #f2f2f2;
+  border-top: #e5e5e6, solid;
+  border-bottom: #e5e5e6 solid;
+  border-width: 2px;
+}
+.td-special {
+  border-width: 2px;
+  border-bottom-color: #4473cf;
+  border-bottom-style: solid;
+}
+
+tr {
+  align-items: center;
+  line-height: 2.2em;
+}
+
 tbody {
   width: 100%;
 }
@@ -150,9 +188,10 @@ th {
   background-color: #3d6cc9;
   text-align: center;
   padding-left: 10px;
+  color: white;
 }
 td {
-  border: 1px, solid, black;
+  /* border: 1px, solid, black; */
 }
 
 /* FORM */
@@ -198,7 +237,9 @@ section div p:last-of-type {
 }
 /* FORM */
 input {
-  border-bottom: dashed;
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
 }
 form button {
   color: white;
